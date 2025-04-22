@@ -1,0 +1,250 @@
+/* Reset & Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #0f172a; /* Tailwind's slate-900 */
+    color: white;
+    line-height: 1.6;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  
+  /* Header */
+  .header {
+    background-color: #1d4ed8; /* Tailwind's blue-700 */
+    padding: 1rem 0;
+  }
+  
+  .logo {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .nav-search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .nav-links a {
+    margin-right: 1rem;
+    text-decoration: none;
+    color: white;
+  }
+  
+  .nav-links a:hover {
+    text-decoration: underline;
+  }
+  
+  .search-box {
+    position: relative;
+  }
+  
+  .search-box input {
+    padding: 0.5rem 2rem 0.5rem 0.75rem;
+    border-radius: 999px;
+    border: none;
+    color: black;
+  }
+  
+  .search-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.9rem;
+    color: gray;
+  }
+  
+  /* News Logos */
+  .news-logos {
+    background: white;
+    color: black;
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .logos img {
+    height: 40px;
+    object-fit: contain;
+  }
+  
+  /* Main Content */
+  .main-content {
+    padding: 2rem 0;
+  }
+  
+  .main-heading {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+  }
+  
+  .market-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .up {
+    color: #22c55e;
+  }
+  
+  /* Breaking News */
+  .breaking-news {
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .today {
+    background-color: #334155; /* Tailwind's slate-700 */
+  }
+  
+  .yesterday {
+    background-color: white;
+    color: black;
+  }
+  
+  .breaking-news h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .breaking-news h3 {
+    font-size: 1.2rem;
+    font-style: italic;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Categories */
+  .categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+  
+  .category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .category img {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* CTA */
+  .cta {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .cta .true {
+    color: white;
+  }
+  
+  .cta .highlight {
+    color: #f97316; /* Tailwind's orange-500 */
+  }
+  
+  .cta .black {
+    color: black;
+  }
+  
+  .inputs {
+    max-width: 400px;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .inputs input {
+    padding: 0.75rem;
+    border-radius: 6px;
+    border: none;
+    color: black;
+  }
+  
+  .inputs button {
+    padding: 0.75rem;
+    background-color: #1f2937; /* Tailwind's gray-800 */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .inputs button:hover {
+    background-color: #374151; /* Tailwind's gray-700 */
+  }
+  
+  .description {
+    max-width: 600px;
+    margin: 1rem auto;
+    font-size: 0.9rem;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #0f172a;
+    padding: 2rem 0;
+    color: white;
+  }
+  
+  .footer h3 {
+    color: #3b82f6; /* Tailwind's blue-500 */
+    margin-bottom: 0.75rem;
+  }
+  
+  .footer ul {
+    list-style: none;
+    font-size: 0.9rem;
+  }
+  
+  .footer ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    border-top: 1px solid #1e293b;
+    padding-top: 1rem;
+    font-size: 0.8rem;
+    color: #3b82f6;
+  }
+  
