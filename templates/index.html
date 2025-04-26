@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HackX - Fake News Detector</title>
+    <!-- <link rel="stylesheet" href="static\style.css"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <!-- <script src="static\script.js"></script> -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    
+    <!-- Navigation Bar --> 
+    <nav class="navbar">
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="logo">
+            <h1>HackX</h1>
+        </div>
+        <div class="nav-links">
+            <a href="#" class="active">Home</a>
+            <a href="#breaking-news-section">Breaking News</a>
+            <a href="#news-tags-section">Events</a>
+            <a href="#variety-of-topics">Topics</a>
+        </div>
+       
+    </nav>
+
+    <!-- News Channel Logos -->
+    <div class="news-channels">
+        <div class="channel-logos">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/28/Aaj_tak_logo.png" alt="Aaj Tak">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c5/NDTV_logo.svg" alt="NDTV India">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/ABP_News_logo.svg/330px-ABP_News_logo.svg.png" alt="ABP News">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e3/CNBC_logo.svg" alt="CNBC">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/CNN.svg/960px-CNN.svg.png" alt="CNN News 18">
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <section class="detector-section">
+            <h1 class="main-title">FAKE NEWS DETECTOR</h1>
+            <h2 class="subtitle">Check how <span class="true-text">TRUE</span> is the NEWS</h2>
+            <p class="with-text">with our <span class="fake-text">FAKE NEWS DETECTOR</span></p>
+
+            <div class="input-container">
+                <form id="predictForm" class="input-container">
+                    <input type="text" id="inputNews" placeholder="ENTER YOUR NEWS" class="news-input">
+                    <button type="submit" class="submit-btn">SUBMIT</button>
+                </form>
+                <p id="result" style="text-align:center; margin-top: 1rem; font-weight: bold;"></p> 
+            </div>
+
+            <p class="description">
+                This Fake News Detector will help you to gain the useful information without
+                misleading you. And, we will not just only provide you how much ACCURATE or
+                FAKE the news is, but will also give you the complete source of the news.
+            </p>
+
+            <div class="market-indicators">
+                <div class="indicator">
+                    <span class="indicator-label">Sensex</span>
+                    <i class="fas fa-chart-line"></i>
+                    <span class="green">+855.30 (1.09%)</span>
+                </div>
+                <p class="separator"> | </p>
+                <div class="indicator">
+                    <span>Gold Rate</span>
+                    <i class="fas fa-coins"></i>
+                    <span>99,475.00 INR</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Categories Section -->
+        <section class="categories-section" id="variety-of-topics">
+            <div class="category-slider">   
+                <button class="slider-btn prev"><i class="fas fa-chevron-left"></i></button>
+                <div class="categories">
+                    <div class="category">
+                        <div class="category-icon">
+                            <a href="https://news.google.com/" target="_blank">
+                            <img src="https://growmoretrading.com/wp-content/uploads/2023/05/gt-1.png" alt="Trading">
+                            </a>
+                        </div>
+                        <span>Trading</span>
+                    </div>
+                    <div class="category">
+                        <div class="category-icon">
+                            <a href="https://news.google.com/" target="_blank">
+                            <img src="https://thafd.bing.com/th/id/OIP.GrTusuNDmrz6WiUf3SrWqwAAAA?pid=ImgDet&w=183&h=122&c=7" alt="Finance">
+                            </a>
+                        </div>
+                        <span>Finance</span>
+                    </div>
+                    <div class="category">
+                        <div class="category-icon">
+                            <a href="https://news.google.com/" target="_blank">
+                            <img src="https://thafd.bing.com/th/id/OIP.87BQ6GK-BPMv2GsEL7tGpgHaHa?w=188&h=188&c=7&r=0&o=5&pid=1.7" alt="Education">
+                            </a>
+                        </div>
+                        <span>Education</span>
+                    </div>
+                    <div class="category">
+                        <div class="category-icon">
+                            <a href="https://news.google.com/" target="_blank">
+                            <img src="https://img.freepik.com/free-vector/gradient-abstract-technology-company-logotype_52683-9702.jpg?semt=ais_hybrid&w=740" alt="Technology">
+                            </a>
+                        </div>
+                        <span>Technology</span>
+                    </div>
+                    <div class="category">
+                        <div class="category-icon">
+                            <a href="https://news.google.com/" target="_blank" >
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTibkfvVHE8olPYLGGnfVmFPTbhk8puQwn-Bw&s" alt="Politics">
+                            </a>
+                        </div>
+                        <span>Politics</span>
+                    </div>
+                </div>
+                <button class="slider-btn next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </section>
+
+        <!-- Breaking News Section -->
+        <section class="news-section">
+            <div class="breaking-news"id="breaking-news-section">
+                <h2>BREAKING NEWS TODAY</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <h3>Lorem ipsum dolor sit amet</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="recommendations">
+                <div class="recommendations-title">
+                    <span>Original Websites</span>
+                </div>
+                <div class="recommendations-links">
+                    <ul>
+                        <li><a href="https://www.bbc.com/news" target="_blank">BBC News</a></li>
+                        <li><a href="https://www.cnn.com/" target="_blank">CNN</a></li>
+                        <li><a href="https://www.reuters.com/" target="_blank">Reuters</a></li>
+                        <li><a href="https://www.apnews.com/" target="_blank">Associated Press</a></li>
+                        <li><a href="https://news.google.com/" target="_blank">Google News</a></li>
+                    </ul>
+                </div>
+            </div>    
+        </section>
+
+        <!-- News Tags -->
+        <section class="news-tags" id="news-tags-section">
+            <a href="https://news.google.com/search?for=state+news+madhya+pradesh&hl=en-IN&gl=IN&ceid=IN%3Aen" target="_blank" class="tag">State News</a>
+            <a href="https://news.google.com/topics/CAAqJQgKIh9DQkFTRVFvSUwyMHZNRE55YXpBU0JXVnVMVWRDS0FBUAE?hl=en-IN&gl=IN&ceid=IN%3Aen" target="_blank" class="tag">National News </a>
+            <a href="https://news.google.com/topics/CAAqKAgKIiJDQkFTRXdvS0wyMHZNR1JzYTJSblp4SUZaVzR0UjBJb0FBUAE?hl=en-IN&gl=IN&ceid=IN%3Aen" target="_blank" class="tag">International News </a>
+            <a href="https://news.google.com/search?q=foreign%20affairs&hl=en-IN&gl=IN&ceid=IN%3Aen" target="_blank" class="tag">Foreign Affairs </a>
+            <a href="https://news.google.com/topics/CAAqJAgKIh5DQkFTRUFvSEwyMHZNRzFyZWhJRlpXNHRSMElvQUFQAQ?hl=en-IN&gl=IN&ceid=IN%3Aen" target="_blank" class="tag">AI News </a>
+            <a href="https://news.google.com/search?q=sports%20news&hl=en-IN&gl=IN&ceid=IN%3Aen" target="_blank" class="tag">Sports News </a>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta-section">
+            <h2>Get the Latest and <span class="real-text">REAL</span> news at <span class="hackx-text">HackX</span></h2>
+            <h3>NOW STAY AHEAD WITH <span class="hackx-text">HackX</span></h3>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Sources</h3>
+                    <ul>
+                        <li><a href="https://www.aajtak.in/" target="_blank" rel="noopener noreferrer">Aaj Tak</a></li>
+                        <li><a href="https://www.ndtv.com/" target="_blank" rel="noopener noreferrer">NDTV India</a></li>
+                        <li><a href="https://zeenews.india.com/" target="_blank" rel="noopener noreferrer">ZEE News</a></li>
+                        <li><a href="https://www.cnbc.com/" target="_blank" rel="noopener noreferrer">CNBC</a></li>
+                        <li><a href="https://www.news18.com/cnn-news18/" target="_blank" rel="noopener noreferrer">CNN News 18</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="https://news.google.com/search?q=breaking%20news&hl=en-IN&gl=IN&ceid=IN%3Aen"target="_blank" rel="noopener noreferrer">Breaking News Today</a></li>
+                        <li><a href="https://news.google.com/search?q=breaking%20news%20yesterday%20or%20older&hl=en-IN&gl=IN&ceid=IN%3Aen"target="_blank" rel="noopener noreferrer">Breaking News Yesterday</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>News Sectors</h3>
+                    <ul>
+                        <li><a href="https://news.google.com/topics/CAAqKggKIiRDQkFTRlFvSUwyMHZNREpxYW5RU0JXVnVMVWRDR2dKSlRpZ0FQAQ?hl=en-IN&gl=IN&ceid=IN%3Aen"target="_blank" rel="noopener noreferrer">Entertainment</a></li>
+                        <li><a href="https://news.google.com/search?q=finance&hl=en-IN&gl=IN&ceid=IN%3Aen"target="_blank" rel="noopener noreferrer">Finance</a></li>
+                        <li><a href="https://news.google.com/search?q=education&hl=en-IN&gl=IN&ceid=IN%3Aen"target="_blank" rel="noopener noreferrer">Education</a></li>
+                        <li><a href="https://news.google.com/search?q=poitics&hl=en-IN&gl=IN&ceid=IN%3Aen"target="_blank" rel="noopener noreferrer">Politics</a></li>
+                        <li><a href="https://news.google.com/topics/CAAqKggKIiRDQkFTRlFvSUwyMHZNRGRqTVhZU0JXVnVMVWRDR2dKSlRpZ0FQAQ?hl=en-IN&gl=IN&ceid=IN%3Aen"target="_blank" rel="noopener noreferrer">Technology</a></li>
+                        <li><a href="https://news.google.com/search?q=trading&hl=en-IN&gl=IN&ceid=IN%3Aen"target="_blank" rel="noopener noreferrer">Trading</a></li>
+                        <li><a href="https://news.google.com/search?q=national%20news&hl=en-IN&gl=IN&ceid=IN%3Aen"target="_blank" rel="noopener noreferrer">National News</a></li>
+                        <li><a href="https://news.google.com/topics/CAAqJAgKIh5DQkFTRUFvSEwyMHZNRzFyZWhJRlpXNHRSMElvQUFQAQ?hl=en-IN&gl=IN&ceid=IN%3Aen"target="_blank" rel="noopener noreferrer">AI</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Speciality</h3>
+                    <ul>
+                        <li>Fake News Detection</li>
+                        <li>Provide Accuracy</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="contact-info">
+                <p>Made by team HackX</p>
+                <!-- <p>@copyright 2025</p> -->
+            </div>
+        </footer>
+    </main>
+
+    <!-- <script src="script.js"></script> -->
+</body>
+</html>
