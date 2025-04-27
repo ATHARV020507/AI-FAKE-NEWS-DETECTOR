@@ -36,8 +36,8 @@ An intelligent web-based system built by team HackX, that uses machine learning 
 1. **Clone the repository**
 
 ```bash
-git clone https://github.com/yourusername/fake-news-detector.git
-cd fake-news-detector
+git clone https://github.com/AnubhavBhatnagar27/HackX---AI-Fake-News-Detector
+cd HackX---AI-Fake-News-Detector
 ```
 
 2. **Create a virtual environment (optional but recommended)**
