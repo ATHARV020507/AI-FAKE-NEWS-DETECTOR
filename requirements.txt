@@ -1,10 +1,10 @@
-pip install pandas
-pip install seaborn
-pip install matplotlib
-pip install wordcloud
-pip install re
-pip install nltk
-pip install scikit-learn
-pip install joblib
-pip install flask
-pip install flask-cors
+pandas
+seaborn
+matplotlib
+wordcloud
+re
+nltk
+scikit-learn
+joblib
+flask
+flask-cors
