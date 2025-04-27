@@ -2,7 +2,6 @@ pandas
 seaborn
 matplotlib
 wordcloud
-re
 nltk
 scikit-learn
 joblib
