@@ -26,7 +26,6 @@ The dataset is available at : https://drive.google.com/file/d/13jxJYzrpKJXteckGh
 ```plaintext
 ├── app.py                      # Main Flask app
 ├── requirements.txt            # List of Python dependencies
-├── Procfile                    # Render start command
 ├── fake_news_model.pkl         # Trained Decision Tree model
 ├── vectorizer.pkl              # Vectorizer for text input
 │
