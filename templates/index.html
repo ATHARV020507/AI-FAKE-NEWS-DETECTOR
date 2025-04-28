@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HackX - Fake News Detector</title>
-    <!-- <link rel="stylesheet" href="static\style.css"> -->
+    <!-- <link rel="stylesheet" href="style.css"> -->
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-    <!-- <script src="static\script.js"></script> -->
+    <!-- <script src="script.js"></script> -->
     <script src="{{ url_for('static', filename='script.js') }}"></script>
+     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
@@ -22,10 +23,10 @@
         </div>
         <div class="nav-links">
             <a href="#" class="active">Home</a>
-            <a href="#breaking-news-section">Breaking News</a>
-            <a href="#news-tags-section">Events</a>
             <a href="#variety-of-topics">Topics</a>
-        </div>
+            <a href="#breaking-news-section">Today's Breaking News</a>
+            <!-- <a href="#news-tags-section">Categories</a> -->
+        </div>  
        
     </nav>
 
@@ -33,6 +34,7 @@
     <div class="news-channels">
         <div class="channel-logos">
             <img src="https://upload.wikimedia.org/wikipedia/commons/2/28/Aaj_tak_logo.png" alt="Aaj Tak">
+            <img src="https://bansalnews.com/wp-content/uploads/2025/03/logo-min-1-1.png" alt="Bansal News">
             <img src="https://upload.wikimedia.org/wikipedia/commons/c/c5/NDTV_logo.svg" alt="NDTV India">
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/ABP_News_logo.svg/330px-ABP_News_logo.svg.png" alt="ABP News">
             <img src="https://upload.wikimedia.org/wikipedia/commons/e/e3/CNBC_logo.svg" alt="CNBC">
@@ -52,7 +54,7 @@
                     <input type="text" id="inputNews" placeholder="ENTER YOUR NEWS" class="news-input">
                     <button type="submit" class="submit-btn">SUBMIT</button>
                 </form>
-                <p id="result" style="text-align:center; margin-top: 1rem; font-weight: bold;"></p> 
+                <p id="result" style="text-align:center; margin-top: 2rem; font-weight: normal;  font-size: 2rem;"></p> 
             </div>
 
             <p class="description">
@@ -61,7 +63,7 @@
                 FAKE the news is, but will also give you the complete source of the news.
             </p>
 
-            <div class="market-indicators">
+            <!-- <div class="market-indicators">
                 <div class="indicator">
                     <span class="indicator-label">Sensex</span>
                     <i class="fas fa-chart-line"></i>
@@ -73,7 +75,7 @@
                     <i class="fas fa-coins"></i>
                     <span>99,475.00 INR</span>
                 </div>
-            </div>
+            </div> -->
         </section>
 
         <!-- Categories Section -->
@@ -83,43 +85,43 @@
                 <div class="categories">
                     <div class="category">
                         <div class="category-icon">
-                            <a href="https://news.google.com/" target="_blank">
-                            <img src="https://growmoretrading.com/wp-content/uploads/2023/05/gt-1.png" alt="Trading">
+                            <a href="https://news.abplive.com/business" target="_blank">
+                            <img src="https://img.freepik.com/free-vector/helping-partner-concept-illustration_114360-8867.jpg?t=st=1745828073~exp=1745831673~hmac=075c62a33f7d5cde78e08c54fab9636641af5302a7f175074167a7da3ddce046&w=740" alt="Business">
                             </a>
                         </div>
-                        <span>Trading</span>
+                        <span>Business</span>
                     </div>
                     <div class="category">
                         <div class="category-icon">
-                            <a href="https://news.google.com/" target="_blank">
-                            <img src="https://thafd.bing.com/th/id/OIP.GrTusuNDmrz6WiUf3SrWqwAAAA?pid=ImgDet&w=183&h=122&c=7" alt="Finance">
+                            <a href="https://www.abplive.com/sports" target="_blank">
+                            <img src="https://img.freepik.com/free-vector/sport-equipment-concept_1284-13034.jpg?t=st=1745828116~exp=1745831716~hmac=3ad57d3b5051939021314e3650e8e71feeae55225c987b477f0ffda9e94a1d89&w=740" alt="Sports">
                             </a>
                         </div>
-                        <span>Finance</span>
+                        <span>Sports</span>
                     </div>
                     <div class="category">
                         <div class="category-icon">
-                            <a href="https://news.google.com/" target="_blank">
-                            <img src="https://thafd.bing.com/th/id/OIP.87BQ6GK-BPMv2GsEL7tGpgHaHa?w=188&h=188&c=7&r=0&o=5&pid=1.7" alt="Education">
+                            <a href="https://www.abplive.com/education" target="_blank">
+                            <img src="https://img.freepik.com/free-vector/learning-concept-illustration_114360-6186.jpg?t=st=1745828002~exp=1745831602~hmac=24fd08c4c1583f157ecb71e5938e14a9b34a2a8c72c198b4ad6b808f0a2e0fc2&w=740" alt="Education">
                             </a>
                         </div>
                         <span>Education</span>
                     </div>
                     <div class="category">
                         <div class="category-icon">
-                            <a href="https://news.google.com/" target="_blank">
-                            <img src="https://img.freepik.com/free-vector/gradient-abstract-technology-company-logotype_52683-9702.jpg?semt=ais_hybrid&w=740" alt="Technology">
+                            <a href="https://www.abplive.com/technology" target="_blank">
+                            <img src="https://img.freepik.com/free-vector/ai-technology-microchip-background-vector-digital-transformation-concept_53876-112222.jpg?t=st=1745827935~exp=1745831535~hmac=d0fc6fa30352262a10aad9d3b422c30ed558b851eec425764b612e137816f3f5&w=740" alt="Technology">
                             </a>
                         </div>
                         <span>Technology</span>
                     </div>
                     <div class="category">
                         <div class="category-icon">
-                            <a href="https://news.google.com/" target="_blank" >
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTibkfvVHE8olPYLGGnfVmFPTbhk8puQwn-Bw&s" alt="Politics">
+                            <a href="https://news.abplive.com/elections" target="_blank" >
+                            <img src="https://img.freepik.com/free-vector/hand-with-voting-sign-election_1017-18637.jpg?t=st=1745828295~exp=1745831895~hmac=368b68bdb59ca65727b757cc5dfe670b9259e8518701db7bcd3311694a2a72a8&w=740" alt="Politics">
                             </a>
                         </div>
-                        <span>Politics</span>
+                        <span>Elections</span>
                     </div>
                 </div>
                 <button class="slider-btn next"><i class="fas fa-chevron-right"></i></button>
@@ -128,18 +130,19 @@
 
         <!-- Breaking News Section -->
         <section class="news-section">
-            <div class="breaking-news"id="breaking-news-section">
+            <div class="breaking-news" id="breaking-news-section">
                 <h2>BREAKING NEWS TODAY</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <h3>Lorem ipsum dolor sit amet</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
+                <div class="breaking-news-container" id="breaking-news-container">
+                    <!-- Breaking news cards will be inserted here -->
+                </div>
+            </div>            
             <div class="recommendations">
                 <div class="recommendations-title">
                     <span>Original Websites</span>
                 </div>
                 <div class="recommendations-links">
                     <ul>
+                        <li><a href="https://bansalnews.com/" target="_blank">Bansal News</a></li>
                         <li><a href="https://www.bbc.com/news" target="_blank">BBC News</a></li>
                         <li><a href="https://www.cnn.com/" target="_blank">CNN</a></li>
                         <li><a href="https://www.reuters.com/" target="_blank">Reuters</a></li>
@@ -151,14 +154,14 @@
         </section>
 
         <!-- News Tags -->
-        <section class="news-tags" id="news-tags-section">
+        <!-- <section class="news-tags" id="news-tags-section">
             <a href="https://news.google.com/search?for=state+news+madhya+pradesh&hl=en-IN&gl=IN&ceid=IN%3Aen" target="_blank" class="tag">State News</a>
             <a href="https://news.google.com/topics/CAAqJQgKIh9DQkFTRVFvSUwyMHZNRE55YXpBU0JXVnVMVWRDS0FBUAE?hl=en-IN&gl=IN&ceid=IN%3Aen" target="_blank" class="tag">National News </a>
             <a href="https://news.google.com/topics/CAAqKAgKIiJDQkFTRXdvS0wyMHZNR1JzYTJSblp4SUZaVzR0UjBJb0FBUAE?hl=en-IN&gl=IN&ceid=IN%3Aen" target="_blank" class="tag">International News </a>
             <a href="https://news.google.com/search?q=foreign%20affairs&hl=en-IN&gl=IN&ceid=IN%3Aen" target="_blank" class="tag">Foreign Affairs </a>
             <a href="https://news.google.com/topics/CAAqJAgKIh5DQkFTRUFvSEwyMHZNRzFyZWhJRlpXNHRSMElvQUFQAQ?hl=en-IN&gl=IN&ceid=IN%3Aen" target="_blank" class="tag">AI News </a>
             <a href="https://news.google.com/search?q=sports%20news&hl=en-IN&gl=IN&ceid=IN%3Aen" target="_blank" class="tag">Sports News </a>
-        </section>
+        </section> -->
 
         <!-- Call to Action -->
         <section class="cta-section">
@@ -172,6 +175,7 @@
                 <div class="footer-column">
                     <h3>Sources</h3>
                     <ul>
+                        <li><a href="https://bansalnews.com/" target="_blank" rel="noopener noreferrer">Bansal News</a></li>
                         <li><a href="https://www.aajtak.in/" target="_blank" rel="noopener noreferrer">Aaj Tak</a></li>
                         <li><a href="https://www.ndtv.com/" target="_blank" rel="noopener noreferrer">NDTV India</a></li>
                         <li><a href="https://zeenews.india.com/" target="_blank" rel="noopener noreferrer">ZEE News</a></li>
@@ -209,6 +213,7 @@
             </div>
             <div class="contact-info">
                 <p>Made by team HackX</p>
+                <p>Under Codictive 3.0 hosted by Bansal Institute of Science and Technology 2025</p>
                 <!-- <p>@copyright 2025</p> -->
             </div>
         </footer>

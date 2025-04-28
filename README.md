@@ -10,6 +10,10 @@ An intelligent web-based system built by team HackX, that uses machine learning 
 - 📥 Simple input interface for news content
 - 📊 Real-time predictions with intuitive UI feedback
 
+## 📊 Dataset
+
+The dataset is available at : https://drive.google.com/file/d/13jxJYzrpKJXteckGhPtpt6aLvj0nZgfo/view?usp=drive_link
+
 ## 🧰 Tech Stack
 
 - **Frontend:** HTML, CSS, JavaScript  
@@ -20,18 +24,23 @@ An intelligent web-based system built by team HackX, that uses machine learning 
 ## 📂 Project Structure
 
 ```plaintext
-├── static/               
-│   ├── style.css         # Styling for the frontend
-│   └── script.js         # Client-side JavaScript
-├── templates/            
-│   └── index.html        # Main HTML page for user interface
-├── notebook/             # ML model and preprocessing notebook
-├── app.py                # Main Flask application
-├── requirements.txt      # Project dependencies
-└── README.md             # Project documentation
+├── app.py                      # Main Flask app
+├── requirements.txt            # List of Python dependencies
+├── Procfile                    # Render start command
+├── fake_news_model.pkl         # Trained Decision Tree model
+├── vectorizer.pkl              # Vectorizer for text input
+│
+├── templates/                  # HTML files
+│   └── index.html
+│
+├── static/                     # CSS, JS
+│   ├── style.css
+│   └── script.js
+│
+└── README.md                   # Project description
 ```
 
-## 🔧 Installation
+## 🔧 Installation (for Localhost)
 
 1. **Clone the repository**
 
