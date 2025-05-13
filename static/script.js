@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // --- BREAKING NEWS FETCHING ---
     async function fetchBreakingNews() {
-        const apiKey = 'b5d6d3c39483449bb8e910368af4922c'; // Your NewsAPI key
+        const apiKey = ''; // Your NewsAPI key
         const apiUrl = `https://newsapi.org/v2/top-headlines?country=us&pageSize=5&apiKey=${apiKey}`;
 
         const breakingNewsSection = document.getElementById('breaking-news-section');
