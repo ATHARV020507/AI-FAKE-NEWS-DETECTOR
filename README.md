@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 📰 AI Fake News Detector
 
 An intelligent web-based system built by team HackX, that uses machine learning to identify and classify news as *fake* or *real*. This project combines a user-friendly interface with powerful AI capabilities to combat misinformation online.
@@ -79,3 +80,6 @@ Team Members :
 - Atharv Shukla
 - Anushka Gupta
 - Janavi Chhabaria
+=======
+# AI-FAKE-NEWS-DETECTOR
+>>>>>>> 198d06418734fc512d989fe69f8b3180a70b2220
